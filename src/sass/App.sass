@@ -1,0 +1,57 @@
+@import "nullstyle.scss", "media/index.sass", "caption.sass", "flex.sass", "columns.sass"
+
+$space-1: 4px
+$space-2: 10px
+$space-3: 16px
+$space-4: 20px
+$space-5: 28px
+$space-6: 44px
+
+body
+    font-family: 'Raleway', sans-serif
+
+.App
+    pisition: relative
+    background: #c2c6d6
+    overflow-x: hidden
+    height: 100vh
+    width: 100vw
+    display: flex
+    justify-content: center
+    align-items: center
+
+.clock
+    width: 440px
+    padding: 2px
+
+.options
+    margin: 20px 0
+    &__controls
+        margin: 12px auto
+        width: 100px
+        button
+            display: inline-block
+            background: none
+        div
+            display: inline-block
+            width: 60px
+
+.screen
+    margin: 12px auto
+    width: 300px
+    height: 148px
+    border: 4px solid #9494a3
+    border-radius: 40px
+    &.is-active
+        h3
+            color: #9e0d0d
+.icon
+    font-size: 20px
+
+.control
+    display: flex
+    justify-content: center
+    button
+        display: inline-block
+        background: none
+        margin: 12px
